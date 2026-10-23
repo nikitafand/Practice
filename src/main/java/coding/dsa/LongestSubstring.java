@@ -9,9 +9,9 @@ public class LongestSubstring {
 
     public static void main(String[] args) {
         String str= "mq";//"abcabcdefghd";
-        System.out.println(findLongestNonRepeating(str));
+        //System.out.println(findLongestNonRepeating(str));
         String ch="eceba";
-       // longestSubstringAtMostKDistinct(ch, 2);
+        System.out.println(longestSubstringAtMostKDistinct(ch, 2));
     }
 
     private static int findLongestNonRepeating(String str) {
@@ -68,6 +68,7 @@ while (right< s.length()){
             maxLen = Math.max(maxLen, right - left + 1);
 right++;
         }
+        System.out.println(left +""+right);
         for(int i = left ; i < right; i++){
             System.out.println(s.charAt(i));
         }
